@@ -20,9 +20,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/api", router);
 app.use("/", user_routes);
 
-app.set("view engine", "ejs");
-app.set("views", "./views");
-app.use(express.static("public"));
+// app.set("view engine", "ejs");
+// app.set("views", "./views");
+// app.use(express.static("public"));
 
 app.use((err, req, res, next) => {
   err.statusCode = err.statusCode || 500;

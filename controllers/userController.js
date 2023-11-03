@@ -2,7 +2,6 @@ import { validationResult } from "express-validator";
 import bcrypt from "bcrypt";
 import Randomstring from "randomstring";
 import jwt, { decode } from "jsonwebtoken";
-// const { JWT_SECRET } = process.env;
 const JWT_SECRET = "strong-secret-key-shivam";
 
 import sendMail from "../helpers/sendMail.js";
